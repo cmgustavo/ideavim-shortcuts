@@ -1,0 +1,70 @@
+\documentclass[10pt,landscape]{article}
+\usepackage{multicol}
+\usepackage[landscape]{geometry}
+\usepackage{hyperref}
+
+% Turn off header and footer
+\pagestyle{empty}
+
+
+% Redefine section commands to use less space
+\makeatletter
+% Don't print section numbers
+\setcounter{secnumdepth}{0}
+
+% -----------------------------------------------------------------------
+
+\begin{document}
+
+\begin{center}
+     \Large{\textbf{IDEAVim Shortcuts}} \\
+\end{center}
+
+\begin{description}
+  \item A few shortcuts for Webstorm IDE + VIM Plugin.
+\end{description}
+
+
+\begin{multicols}{2}
+
+\section{General}
+\begin{tabular}{@{}ll@{}}
+\verb!<leader> e!    & Modal file structure. \\
+\verb!<leader> o!    & Focus file in Project. \\
+\verb!<leader> h!    & Go to previous tab. \\
+\verb!<leader> n!    & Open file. \\
+\verb!<leader> l V!  & Reformat code. \\
+\verb!<leader> a!    & Go to Action. \\
+\verb!<leader> c!    & Go to Class. \\
+\verb!<leader> s!    & Go to Symbol. \\
+\verb!<leader> ff!   & Go to File. \\
+\verb!<leader> fc!   & Show recent changed files. \\
+\verb!<leader> fo!   & Show recent files.
+\end{tabular}
+
+\section{Go To}
+\begin{tabular}{@{}ll@{}}
+  \verb!g u!    & Super Method. \\
+  \verb!g i!    & Implementation. \\
+  \verb!g d!    & Declaration. \\
+  \verb!g t!    & Test. \\
+  \verb!g j!    & Next Error. \\
+  \verb!g k!    & Previous Error. \\
+  \verb!g h!    & Quick Java Documentation. \\
+  \verb!g H!    & Quick Actions. \\
+  \verb!g r!    & Refactoring Menu. \\
+  \verb!g a!    & Show Intention Actions. \\
+  \verb!g f!    & Show Usages. \\
+  \verb!g F!    & Find Usages.
+\end{tabular}
+
+\end{multicols}
+
+\rule{\linewidth}{0.25pt}
+\scriptsize
+
+Copyright \copyright\ 2023 Gustavo Cortez
+
+\href{http://github.com/cmgustavo/ideavim-shortcuts/}{http://github.com/cmgustavo/ideavim-shortcuts/}
+
+\end{document}
